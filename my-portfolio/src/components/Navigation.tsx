@@ -19,13 +19,13 @@ export default function Navigation() {
   }, [])
 
   const handleResumeOpenAndDownload = () => {
-    const url = "/Kumod-Sharma-Resume.pdf";
+    const url = "/BhagyaLaxmi-Kummaripally.pdf";
     // Open in new tab
     window.open(url, "_blank");
     // Trigger download
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Kumod-Sharma-Resume.pdf";
+    link.download = "BhagyaLaxmi-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
