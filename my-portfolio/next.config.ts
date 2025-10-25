@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+//   /* config options here */
+// };
+
+// export default nextConfig;
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: { unoptimized: true },
+  // If you use basePath or assetPrefix, set them here for GitHub Pages
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/kumod1164.github.io/' : '',
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
